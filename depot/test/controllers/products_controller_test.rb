@@ -42,7 +42,7 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should update product" do
-    patch :update, id: @product, product: @update
+    put :update, id: @product, product: @update
     assert_redirected_to product_path(assigns(:product))
   end
 
